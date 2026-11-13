@@ -60,3 +60,8 @@ PROMPT_INICIAL.md
 # cache de downloads do OSMnx
 /data/pipeline/cache/
 /cache/
+
+# material de marca bruto fica fora do repositório (o app usa public/brand)
+/*.jpeg
+/*.jpg
+/*.png
