@@ -7,6 +7,7 @@ import type { Route } from "@/lib/routes";
 import { Onboarding } from "./Onboarding";
 import { RouteCard } from "./RouteCard";
 import { AboutSheet } from "./AboutSheet";
+import { BrandMark, Wordmark } from "./Brand";
 
 const BASE_STYLE = "https://tiles.openfreemap.org/styles/positron";
 
@@ -151,7 +152,7 @@ export function MapApp() {
           id: "mask",
           type: "fill",
           source: "mask",
-          paint: { "fill-color": "#1d2430", "fill-opacity": 0.28 },
+          paint: { "fill-color": "#0B1F44", "fill-opacity": 0.3 },
         });
         map.addSource("area", {
           type: "geojson",
@@ -161,7 +162,7 @@ export function MapApp() {
           id: "area-line",
           type: "line",
           source: "area",
-          paint: { "line-color": "#1d2430", "line-width": 1.5, "line-dasharray": [3, 2] },
+          paint: { "line-color": "#0B1F44", "line-width": 1.5, "line-dasharray": [3, 2] },
         });
 
         map.addSource("alt", { type: "geojson", data: empty });
@@ -375,13 +376,17 @@ export function MapApp() {
       <div ref={container} className="map" aria-label="Mapa da área coberta" />
 
       <header className="topbar">
-        <h1>SafeRoute</h1>
+        <BrandMark size={30} />
+        <h1>
+          <Wordmark />
+        </h1>
         <button type="button" className="ghost" onClick={() => setAbout(true)}>
           Sobre os dados
         </button>
       </header>
 
       <section ref={panel} className="panel" aria-live="polite">
+        <span className="signature" aria-hidden="true" />
         <div className="controls">
           <span className="mode" aria-label="Modo: a pé">
             A pé
@@ -460,7 +465,7 @@ export function MapApp() {
               ))}
             </ul>
             <div className="legend" aria-label="Legenda: risco registrado por trecho">
-              <span>Risco registrado no trecho:</span>
+              <span>Risco registrado:</span>
               {LEVELS.map((l) => (
                 <span key={l.level} className="legend-item">
                   <i style={{ background: l.color, height: l.width }} />

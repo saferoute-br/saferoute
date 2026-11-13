@@ -52,6 +52,9 @@ O responsável autorizou seguir M1 → M2 → núcleo do M3 sem parar entre os m
 | D29 | O certificado raiz público do Supabase ("Supabase Root 2021 CA", válido até 26/04/2031) fica em `supabase/ca/` e entra no app por `DATABASE_CA_CERT_B64` | [VERIFICADO] | Sem ele a verificação TLS falha (`SELF_SIGNED_CERT_IN_CHAIN`). Baixado do endereço oficial do Supabase e conferido: valida a conexão real do pooler. SHA-256 `80:70:25:AD:50:D4:ED:21:9D:2C:9C:7D:29:9C:00:4F:82:4E:B0:0C:F7:F6:5A:FE:F6:07:D0:7B:72:E6:CA:FA` |
 | D30 | As migrações são aplicadas por `data/pipeline/00_migrate.py`, que confere o identificador do projeto com o `CLAUDE.md` e registra em `supabase_migrations.schema_migrations` | [ASSUMIDO] | A CLI do Supabase não está instalada e a conexão assistida só enxerga outra organização. A tabela de controle é a mesma da CLI |
 
+| D31 | Identidade visual aplicada conforme o kit de marca (paleta, logo, Montserrat); detalhes em `docs/BRAND.md`. O verde da marca não é usado para indicar risco de trecho | [DECIDIDO: aplicar a identidade] · [ASSUMIDO: regras de uso] | Verde em uma rota sugeriria garantia de segurança, contra D10. A escala de risco segue em âmbar → vinho |
+| D32 | O slogan do kit ("vá pela rota segura", "Segurança em cada trajeto") não entra no app | [PENDENTE: decisão da equipe] | Conflita com a regra 7 do `CLAUDE.md` e com D10. O app mantém "Tudo começa pelo caminho." |
+
 ### Verificação no banco real (12/11/2026)
 
 - Projeto `susosoyygixcmouhzyta` (sa-east-1), PostgreSQL 17.11. `postgis_version()` = 3.3; `pgr_version()` = 3.4.1. As duas extensões aceitaram o schema `extensions`.

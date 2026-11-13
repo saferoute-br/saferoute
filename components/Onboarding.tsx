@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useState } from "react";
+import { BrandMark, Wordmark } from "./Brand";
 
 const KEY = "saferoute.aviso.v1";
 
@@ -29,9 +30,15 @@ export function Onboarding() {
 
   return (
     <div className="overlay" role="dialog" aria-modal="true" aria-labelledby="aviso-titulo">
-      <div className="sheet">
-        <h2 id="aviso-titulo">SafeRoute</h2>
-        <p className="tagline">Tudo começa pelo caminho.</p>
+      <div className="sheet sheet-brand">
+        <div className="brand-hero">
+          <BrandMark size={84} />
+          <h2 id="aviso-titulo">
+            <Wordmark />
+          </h2>
+          <p className="tagline">Tudo começa pelo caminho.</p>
+          <span className="signature" aria-hidden="true" />
+        </div>
         <ul>
           <li>Compara caminhos a pé pelo risco registrado de roubo e furto em cada trecho.</li>
           <li>Usa boletins de ocorrência públicos da SSP-SP. Muitos crimes não são registrados.</li>
