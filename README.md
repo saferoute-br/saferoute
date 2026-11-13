@@ -4,6 +4,8 @@ App web (PWA) de código aberto que compara rotas pelo **risco registrado** de r
 
 > O SafeRoute mostra onde houve mais registros de roubo e furto. Ele não prevê crimes e não garante segurança em nenhum caminho. O risco é calculado por trecho de rua e por período; o app não classifica bairros.
 
+**Demonstração:** https://saferoute-nine-theta.vercel.app
+
 **Estado atual:** demonstração enxuta. Funciona o modo a pé: a pessoa toca em dois pontos do mapa e vê até três rotas (mais rápida, equilibrada e de menor risco registrado), com tempo, distância e variação de exposição. Ainda não há modo carro, busca por endereço, explicação por trecho nem relatório de validação. O plano completo está em [`docs/SPEC.md`](docs/SPEC.md) e as decisões em [`docs/DECISIONS.md`](docs/DECISIONS.md).
 
 ## Tecnologias

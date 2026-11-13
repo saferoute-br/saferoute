@@ -126,6 +126,10 @@ export function MapApp() {
         }),
         "top-right",
       );
+      // A atribuição começa recolhida (botão "i") para não cobrir a rota no celular.
+      const attrib = container.current.querySelector(".maplibregl-ctrl-attrib");
+      attrib?.classList.remove("maplibregl-compact-show");
+      attrib?.removeAttribute("open");
       map.touchZoomRotate.disableRotation();
       mapRef.current = map;
 
@@ -346,7 +350,7 @@ export function MapApp() {
       const wide = window.innerWidth >= 720;
       const bottom = wide ? 40 : (panel.current?.offsetHeight ?? 300) + 24;
       map.fitBounds(bounds, {
-        padding: { top: 80, left: wide ? 440 : 36, right: 36, bottom },
+        padding: { top: 110, left: wide ? 440 : 36, right: 36, bottom },
         maxZoom: 17,
       });
     }

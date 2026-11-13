@@ -61,6 +61,21 @@ O responsável autorizou seguir M1 → M2 → núcleo do M3 sem parar entre os m
 - 30 pedidos aleatórios pelo servidor local: mediana 0,08 s, máximo 0,12 s (meta da SPEC: p95 abaixo de 3 s).
 - Não verificado: Security Advisor e Performance Advisor do Supabase (a conexão assistida não enxerga este projeto); limite de taxa.
 
+### Verificação do link publicado (12/11/2026)
+
+Endereço: https://saferoute-nine-theta.vercel.app (Vercel, funções na região `gru1`).
+
+Checklist de segurança do item 11.2 da SPEC:
+
+1. `NEXT_PUBLIC_`: nenhuma variável com esse prefixo no código nem no build. **OK.**
+2. Navegador: nos 11 arquivos de código e respostas de API recebidos, nenhuma ocorrência de string de conexão, endereço do banco, nome do papel, identificador do projeto ou certificado. Só dois servidores são contatados (o próprio app e o de mapa-base). Nenhum cookie. **OK.**
+3. Security Advisor e Performance Advisor do Supabase: **não executados** (a conexão assistida não enxerga este projeto). Pendência humana.
+4. Entradas inválidas e maliciosas (texto no lugar de número, `' OR 1=1 --`, coordenadas absurdas, faixa 99, corpo vazio, JSON quebrado): todas devolvem 400 com mensagem genérica. **OK.**
+5. Limite de taxa: **não existe.** O link não deve ser divulgado amplamente antes disso.
+6. Erro de servidor: a resposta traz só código e mensagem genérica, sem pilha nem texto do banco (conferido com o banco fora de configuração, antes do certificado). **OK.**
+
+Desempenho: 20 pedidos aleatórios contra o link publicado, mediana 0,10 s e máximo 0,22 s; o primeiro pedido após inatividade levou 1,3 s.
+
 ### Números da primeira execução do pipeline (12/11/2026)
 
 - Área: 15,74 km² (distrito + 500 m). Grafo a pé: 3.364 nós, 9.496 arestas dirigidas, 607 km.
