@@ -1,0 +1,62 @@
+# dependências
+/node_modules
+
+# Next.js / build
+/.next/
+/out/
+/build
+*.tsbuildinfo
+next-env.d.ts
+.vercel
+
+# gerado por scripts/copy-map-worker.mjs
+/public/maplibre-gl-worker.mjs
+
+# testes
+/coverage
+/test-results/
+/playwright-report/
+/blob-report/
+/playwright/.cache/
+
+# segredos: nunca versionar (regra 4 do CLAUDE.md)
+.env*
+!.env.example
+*.pem
+
+# Python
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.venv/
+venv/
+
+# dados brutos e derivados: nunca versionar (regra 3 do CLAUDE.md)
+/data/raw/
+/data/out/
+*.xlsx
+*.xls
+*.parquet
+*.gpkg
+*.shp
+*.shx
+*.dbf
+*.prj
+*.geojson
+*.graphml
+*.zip
+*.7z
+
+# Supabase CLI (estado local)
+supabase/.temp/
+supabase/.branches/
+
+# diversos
+.DS_Store
+Thumbs.db
+npm-debug.log*
+PROMPT_INICIAL.md
+
+# cache de downloads do OSMnx
+/data/pipeline/cache/
+/cache/

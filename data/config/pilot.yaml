@@ -1,0 +1,10 @@
+# Área do piloto. É o ÚNICO lugar do projeto que cita o nome do distrito
+# (regra 12 do CLAUDE.md). Trocar de área = trocar este arquivo e rodar o pipeline.
+name: "Tatuapé"
+district_file: "01 - Dados Brutos/Censo IBGE/SP_distritos_CD2022.gpkg"
+district_code_column: "CD_DIST"
+district_code: "355030880"
+buffer_m: 500          # faixa em volta do distrito
+crime_margin_m: 100    # ocorrências até esta distância da área entram no cálculo
+metric_crs: "EPSG:31983"   # SIRGAS 2000 / UTM 23S, para medir em metros
+modes: ["walk"]        # "drive" entra no M5

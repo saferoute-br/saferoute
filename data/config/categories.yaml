@@ -1,0 +1,27 @@
+# Mapeamento NATUREZA_APURADA (SSP-SP) -> categoria do SafeRoute. Para revisão humana.
+# A comparação é feita em maiúsculas e sem espaços nas pontas.
+# Só entram naturezas com ROUBO ou FURTO; TENTATIVA e LATROCÍNIO ficam fora.
+municipality: "S.PAULO"
+include_any: ["ROUBO", "FURTO"]
+exclude_any: ["TENTATIVA", "LATROC"]
+categories:
+  "ROUBO - OUTROS": roubo_pessoa
+  "FURTO - OUTROS": furto_pessoa
+  "ROUBO DE VEÍCULO": roubo_veiculo
+  "FURTO DE VEÍCULO": furto_veiculo
+  "ROUBO DE CARGA": carga
+  "FURTO DE CARGA": carga
+# Texto que identifica via pública em DESCR_TIPOLOCAL (sem diferenciar maiúsculas).
+public_way_contains: "via p"
+# Caixa de coordenadas válidas do município.
+valid_box: { lat_min: -24.05, lat_max: -23.35, lon_min: -46.85, lon_max: -46.35 }
+# Ponto repetido tantas vezes ou mais é suspeito de ser centroide. [HIPÓTESE]
+suspect_repeat_threshold: 100
+# Períodos do dia: índice = hora // 6 (0 madrugada, 1 manhã, 2 tarde, 3 noite).
+period_labels:
+  "DE MADRUGADA": 0
+  "PELA MANHÃ": 1
+  "A TARDE": 2
+  "À TARDE": 2
+  "A NOITE": 3
+  "À NOITE": 3

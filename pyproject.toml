@@ -1,0 +1,9 @@
+[project]
+name = "saferoute-pipeline"
+version = "0.0.0"
+description = "Pipeline de dados do SafeRoute (grafo, ocorrências, risco, validação)"
+requires-python = ">=3.11"
+
+[tool.pytest.ini_options]
+testpaths = ["tests/data"]
+addopts = "-q"

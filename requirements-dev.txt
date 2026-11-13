@@ -1,0 +1,3 @@
+# Ferramentas de teste do pipeline. As bibliotecas do pipeline em si
+# (OSMnx, GeoPandas, pandas, psycopg) entram no M1.
+pytest>=9,<10

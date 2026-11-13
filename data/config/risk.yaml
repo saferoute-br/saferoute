@@ -1,0 +1,18 @@
+# Parâmetros do modelo de risco v0 (item 7 da SPEC). Todos são [HIPÓTESE].
+# Este arquivo inteiro é gravado em risk_runs.params a cada execução.
+radius_m: 60                 # R: distância máxima ocorrência -> trecho
+min_length_m: 30             # piso de comprimento no cálculo da densidade
+years: [2024, 2025]
+year_weights: { 2025: 1.0, 2024: 0.5 }     # r: ano mais recente pesa mais
+severity: { roubo: 1.0, furto: 0.5 }       # s: gravidade
+suspect_weight: 0.5          # c: ponto suspeito de centroide
+confidence_events: 5         # confiança = min(1, n_events / este valor)
+# Dia útil tem 5 dias por semana e fim de semana tem 2. Sem dividir pelo número
+# de dias, o fim de semana sempre pareceria menos arriscado. Ver D19.
+normalize_by_days: true
+modes:
+  walk:
+    public_way_only: true
+    categories: { roubo_pessoa: 1.0, furto_pessoa: 1.0 }
+# Faixas de cor (item 9 da SPEC): nível 1 até 0,5; 2 até 0,8; 3 até 0,95; 4 acima.
+level_thresholds: [0.5, 0.8, 0.95]

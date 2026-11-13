@@ -1,0 +1,14 @@
+# Velocidades para calcular time_s. Todos os valores são [HIPÓTESE].
+walk_kmh: 4.8
+# Carro (M5): limite da via no OSM quando existir; senão, por tipo de via.
+drive_default_kmh:
+  motorway: 80
+  trunk: 60
+  primary: 50
+  secondary: 40
+  tertiary: 40
+  residential: 30
+  living_street: 20
+  service: 20
+  unclassified: 30
+drive_fallback_kmh: 30
