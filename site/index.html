@@ -1,0 +1,344 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>SafeRoute · Tudo começa pelo caminho</title>
+<meta name="description" content="Rotas comparadas pelo risco registrado de roubo e furto. Feito para o Brasil, validado em São Paulo.">
+<meta name="theme-color" content="#15212A">
+<meta property="og:type" content="website">
+<meta property="og:title" content="SafeRoute · Tudo começa pelo caminho">
+<meta property="og:description" content="Rotas comparadas pelo risco registrado de roubo e furto. Feito para o Brasil, validado em São Paulo.">
+<meta property="og:image" content="assets/og.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:locale" content="pt_BR">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" type="image/png" href="assets/favicon.png">
+<link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Montserrat:wght@600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<a class="skip" href="#conteudo">Pular para o conteúdo</a>
+
+<header class="hero">
+  <div class="brand-bar" aria-hidden="true"><span></span><span></span><span></span></div>
+  <div class="wrap hero-grid">
+    <div class="hero-text reveal">
+      <p class="brand">
+        <img src="assets/logo.png" alt="" width="56" height="79">
+        <span class="wordmark on-dark"><span>Safe</span><span class="route">Route</span></span>
+      </p>
+      <h1>Tudo começa pelo caminho.</h1>
+      <p class="lead">Rotas comparadas pelo risco registrado de roubo e furto. Feito para o Brasil, validado em São Paulo.</p>
+      <div class="actions">
+        <a class="btn btn-primary" href="#contato" data-perfil="Pessoa">Entrar na lista de espera</a>
+        <a class="btn btn-ghost" href="#contato" data-perfil="Empresa">Sou empresa ou órgão público</a>
+      </div>
+    </div>
+
+    <div class="hero-art reveal" aria-hidden="true">
+      <svg viewBox="0 0 300 560" role="img" xmlns="http://www.w3.org/2000/svg">
+        <rect x="6" y="6" width="288" height="548" rx="40" fill="#0D161C" stroke="#33454F" stroke-width="3"/>
+        <rect x="20" y="22" width="260" height="516" rx="28" fill="#E9EDE6"/>
+        <clipPath id="tela"><rect x="20" y="22" width="260" height="516" rx="28"/></clipPath>
+        <g clip-path="url(#tela)">
+          <!-- quadras -->
+          <g fill="#DCE3D8">
+            <rect x="20" y="22" width="70" height="78"/><rect x="104" y="22" width="78" height="78"/><rect x="196" y="22" width="84" height="78"/>
+            <rect x="20" y="114" width="70" height="86"/><rect x="104" y="114" width="78" height="86"/><rect x="196" y="114" width="84" height="86"/>
+            <rect x="20" y="214" width="70" height="80"/><rect x="104" y="214" width="78" height="80"/><rect x="196" y="214" width="84" height="80"/>
+            <rect x="20" y="308" width="70" height="70"/><rect x="104" y="308" width="78" height="70"/><rect x="196" y="308" width="84" height="70"/>
+          </g>
+          <rect x="112" y="222" width="62" height="64" rx="8" fill="#CFE3C8"/>
+          <!-- rota mais rápida: trechos âmbar a vinho -->
+          <g fill="none" stroke="#FFFFFF" stroke-width="12" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M97 350 V107 H189 V70"/>
+          </g>
+          <g fill="none" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M97 350 V301" stroke="#F2B84B" stroke-width="6"/>
+            <path d="M97 301 V207" stroke="#E07B39" stroke-width="7"/>
+            <path d="M97 207 V107" stroke="#7A1F3D" stroke-width="9"/>
+            <path d="M97 107 H189" stroke="#B8433A" stroke-width="8"/>
+            <path d="M189 107 V70" stroke="#F2B84B" stroke-width="6"/>
+          </g>
+          <!-- rota de menor risco: contorna em verde -->
+          <path d="M97 350 V301 H189 V70" fill="none" stroke="#FFFFFF" stroke-width="13" stroke-linecap="round" stroke-linejoin="round"/>
+          <path class="draw" d="M97 350 V301 H189 V70" fill="none" stroke="#2EA44F" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+          <!-- marcadores -->
+          <circle cx="97" cy="350" r="11" fill="#1A73C8" stroke="#fff" stroke-width="3"/>
+          <circle cx="189" cy="70" r="11" fill="#15212A" stroke="#fff" stroke-width="3"/>
+          <!-- painel -->
+          <rect x="20" y="388" width="260" height="150" fill="#FFFFFF"/>
+          <rect x="130" y="396" width="40" height="4" rx="2" fill="#C9D2CC"/>
+          <g font-family="Inter, Arial, sans-serif">
+            <rect x="32" y="410" width="236" height="34" rx="9" fill="#F5F6F1" stroke="#D5DCD3"/>
+            <text x="42" y="431" font-size="11" font-weight="700" fill="#15212A">Mais rápida</text>
+            <text x="258" y="431" font-size="11" font-weight="700" fill="#15212A" text-anchor="end">12 min</text>
+            <rect x="32" y="450" width="236" height="34" rx="9" fill="#F5F6F1" stroke="#D5DCD3"/>
+            <text x="42" y="471" font-size="11" font-weight="700" fill="#15212A">Equilibrada</text>
+            <text x="258" y="471" font-size="11" font-weight="700" fill="#15212A" text-anchor="end">13 min</text>
+            <rect x="32" y="490" width="236" height="38" rx="9" fill="#E8F3E6" stroke="#2EA44F" stroke-width="2"/>
+            <text x="42" y="507" font-size="11" font-weight="700" fill="#15212A">Menor risco registrado</text>
+            <text x="42" y="521" font-size="9" fill="#1B7334">+2 min · −30% de exposição</text>
+            <text x="258" y="513" font-size="11" font-weight="700" fill="#15212A" text-anchor="end">14 min</text>
+          </g>
+        </g>
+        <rect x="118" y="30" width="64" height="8" rx="4" fill="#0D161C"/>
+      </svg>
+      <p class="art-note">Exemplo ilustrativo</p>
+    </div>
+  </div>
+</header>
+
+<main id="conteudo">
+
+<section class="section" aria-labelledby="t-problema">
+  <div class="wrap">
+    <p class="eyebrow reveal">O problema no Brasil</p>
+    <h2 id="t-problema" class="reveal">Os apps de mapa dizem quanto tempo leva. Nenhum diz por onde é mais arriscado passar.</h2>
+    <ul class="stats">
+      <li class="stat reveal">
+        <p class="num">830 mil</p>
+        <p class="what">celulares roubados ou furtados no país em 2025, um a cada 38 segundos</p>
+        <p class="source">Fonte: Anuário Brasileiro de Segurança Pública 2026, FBSP</p>
+      </li>
+      <li class="stat reveal">
+        <p class="num">78,8%</p>
+        <p class="what">dos brasileiros temem ter o celular roubado</p>
+        <p class="source">Fonte: FBSP/Datafolha, mar/2026</p>
+      </li>
+      <li class="stat reveal">
+        <p class="num">168,7 milhões</p>
+        <p class="what">de brasileiros conectados à internet</p>
+        <p class="source">Fonte: IBGE, Pnad TIC 2025</p>
+      </li>
+    </ul>
+  </div>
+</section>
+
+<section class="section alt" aria-labelledby="t-sp">
+  <div class="wrap">
+    <p class="eyebrow reveal">Por que São Paulo</p>
+    <h2 id="t-sp" class="reveal">Feito para o Brasil, validado na cidade que nunca dorme.</h2>
+    <ul class="stats">
+      <li class="stat reveal">
+        <p class="num">20%</p>
+        <p class="what">dos celulares subtraídos do país, com 5,6% da população</p>
+        <p class="source">Fonte: FBSP 2026</p>
+      </li>
+      <li class="stat reveal">
+        <p class="num">35,6 milhões</p>
+        <p class="what">de viagens por dia na Grande São Paulo</p>
+        <p class="source">Fonte: Metrô, Pesquisa OD 2023</p>
+      </li>
+      <li class="stat reveal">
+        <p class="num">397 mil</p>
+        <p class="what">roubos e furtos registrados na capital em 2025, metade nas áreas que somam 10% do mapa</p>
+        <p class="source">Fonte: microdados SSP-SP, análise própria</p>
+      </li>
+    </ul>
+  </div>
+</section>
+
+<section class="section" aria-labelledby="t-como">
+  <div class="wrap">
+    <p class="eyebrow reveal">Como funciona</p>
+    <h2 id="t-como" class="reveal">Três passos, do ponto de partida ao porquê de cada trecho.</h2>
+    <ol class="steps">
+      <li class="step reveal">
+        <span class="step-n" aria-hidden="true">1</span>
+        <h3>Escolha origem e destino</h3>
+        <p>Toque no mapa ou busque um endereço. A pé ou de carro.</p>
+      </li>
+      <li class="step reveal">
+        <span class="step-n" aria-hidden="true">2</span>
+        <h3>Compare três rotas</h3>
+        <p>Cada uma com o tempo e a variação de exposição em relação à mais rápida.</p>
+        <ul class="routes" aria-label="Exemplo ilustrativo de comparação">
+          <li><span>Mais rápida</span><b>12 min</b></li>
+          <li><span>Equilibrada</span><b>13 min · −15%</b></li>
+          <li><span>Menor risco registrado</span><b>14 min · −30%</b></li>
+        </ul>
+        <p class="source">Exemplo ilustrativo</p>
+      </li>
+      <li class="step reveal">
+        <span class="step-n" aria-hidden="true">3</span>
+        <h3>Toque num trecho</h3>
+        <p>Veja por que ele tem mais registros: quantos, de que tipo e em que período do dia.</p>
+        <div class="scale" role="img" aria-label="Escala de risco registrado, de menor a maior">
+          <i style="--c:#F2B84B;--h:5px"></i><i style="--c:#E07B39;--h:7px"></i><i style="--c:#B8433A;--h:9px"></i><i style="--c:#7A1F3D;--h:11px"></i>
+        </div>
+        <p class="source">Menor → maior risco registrado</p>
+      </li>
+    </ol>
+  </div>
+</section>
+
+<section class="section dark" aria-labelledby="t-principios">
+  <div class="wrap">
+    <p class="eyebrow reveal">Princípios</p>
+    <h2 id="t-principios" class="reveal">O que o SafeRoute faz, e o que ele se recusa a fazer.</h2>
+    <ul class="cards four">
+      <li class="card reveal"><h3>Trechos, nunca bairros</h3><p>O risco é calculado por trecho de rua e por período. O app não classifica bairros nem quem mora neles.</p></li>
+      <li class="card reveal"><h3>Sem promessa de segurança</h3><p>O app diz “menor risco registrado”, nunca “rota segura”. Ele mostra registros; não prevê crimes.</p></li>
+      <li class="card reveal"><h3>Privacidade por padrão</h3><p>Sem login e sem guardar rotas. Sua localização não vira histórico.</p></li>
+      <li class="card reveal"><h3>Dado aberto e código aberto</h3><p>Dados públicos da SSP-SP e código disponível para qualquer pessoa conferir.</p></li>
+    </ul>
+  </div>
+</section>
+
+<section class="section" aria-labelledby="t-quem">
+  <div class="wrap">
+    <p class="eyebrow reveal">Para quem</p>
+    <h2 id="t-quem" class="reveal">Um mesmo dado, três usos.</h2>
+    <ul class="cards three">
+      <li class="card reveal">
+        <span class="tag tag-green">Pessoas</span>
+        <h3>App gratuito</h3>
+        <p>Compare caminhos a pé e de carro antes de sair.</p>
+        <a class="btn btn-outline" href="#contato" data-perfil="Pessoa">Quero usar</a>
+      </li>
+      <li class="card reveal">
+        <span class="tag tag-yellow">Empresas</span>
+        <h3>API de risco</h3>
+        <p>Para seguradoras, apps de entrega e de mobilidade.</p>
+        <a class="btn btn-outline" href="#contato" data-perfil="Empresa">Falar com a equipe</a>
+      </li>
+      <li class="card reveal">
+        <span class="tag tag-blue">Setor público</span>
+        <h3>Painel de trechos críticos</h3>
+        <p>Trechos com mais registros, por horário, para prefeituras.</p>
+        <a class="btn btn-outline" href="#contato" data-perfil="Setor público">Falar com a equipe</a>
+      </li>
+    </ul>
+  </div>
+</section>
+
+<section class="section alt" aria-labelledby="t-roadmap">
+  <div class="wrap">
+    <p class="eyebrow reveal">Roadmap</p>
+    <h2 id="t-roadmap" class="reveal">Do bairro ao país, uma etapa por vez.</h2>
+    <ol class="timeline">
+      <li class="reveal done"><span class="when">Disponível hoje</span><h3>Demo no Tatuapé</h3><p>Rotas a pé com dados de 2024 e 2025.</p></li>
+      <li class="reveal"><span class="when">Meta: 2027</span><h3>Cidade de São Paulo</h3><p>A pé e de carro, na capital inteira.</p></li>
+      <li class="reveal"><span class="when">Meta: 2028</span><h3>Estado de São Paulo</h3><p>Demais municípios com dados da SSP-SP.</p></li>
+      <li class="reveal"><span class="when">Meta: a partir de 2029</span><h3>Brasil</h3><p>Outros estados, conforme a abertura dos dados.</p></li>
+    </ol>
+    <p class="source reveal">As datas são metas e podem mudar.</p>
+  </div>
+</section>
+
+<section class="section" id="contato" aria-labelledby="t-contato">
+  <div class="wrap contact">
+    <div class="reveal">
+      <p class="eyebrow">Contato e lista de espera</p>
+      <h2 id="t-contato">Quer acompanhar ou conversar?</h2>
+      <p class="lead-dark">Deixe seu contato. Usamos só para falar sobre o SafeRoute.</p>
+    </div>
+    <form id="form-contato" class="form reveal" novalidate>
+      <div class="field">
+        <label for="nome">Nome</label>
+        <input id="nome" name="nome" type="text" autocomplete="name" required>
+      </div>
+      <div class="field">
+        <label for="email">E-mail</label>
+        <input id="email" name="email" type="email" autocomplete="email" inputmode="email" required>
+      </div>
+      <div class="field">
+        <label for="perfil">Perfil</label>
+        <select id="perfil" name="perfil" required>
+          <option value="Pessoa">Pessoa</option>
+          <option value="Empresa">Empresa</option>
+          <option value="Setor público">Setor público</option>
+        </select>
+      </div>
+      <div class="check">
+        <input id="consentimento" name="consentimento" type="checkbox" required>
+        <label for="consentimento">Concordo em receber contato do SafeRoute sobre o projeto</label>
+      </div>
+      <button class="btn btn-primary" type="submit" id="enviar">Enviar</button>
+      <p id="form-status" class="status" role="status" aria-live="polite"></p>
+    </form>
+  </div>
+</section>
+
+</main>
+
+<footer class="footer">
+  <div class="brand-bar" aria-hidden="true"><span></span><span></span><span></span></div>
+  <div class="wrap footer-grid">
+    <p class="brand small">
+      <img src="assets/logo.png" alt="" width="28" height="39" loading="lazy">
+      <span class="wordmark on-dark"><span>Safe</span><span class="route">Route</span></span>
+    </p>
+    <p>© SafeRoute</p>
+    <p>Dados: SSP-SP · Mapa: © OpenStreetMap</p>
+    <p><a href="#">[link do GitHub]</a> · <a href="#">[e-mail]</a></p>
+  </div>
+</footer>
+
+<script>
+// Endereço que recebe o formulário. Configure antes de publicar.
+const FORM_ENDPOINT = "";
+
+(function () {
+  // Entrada discreta das seções (uma vez, sem loop).
+  const items = document.querySelectorAll(".reveal");
+  const calm = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+  if (calm || !("IntersectionObserver" in window)) {
+    items.forEach((el) => el.classList.add("in"));
+  } else {
+    const io = new IntersectionObserver((entries) => {
+      entries.forEach((e) => {
+        if (e.isIntersecting) { e.target.classList.add("in"); io.unobserve(e.target); }
+      });
+    }, { rootMargin: "0px 0px -8% 0px" });
+    items.forEach((el) => io.observe(el));
+  }
+
+  // Botões que já escolhem o perfil no formulário.
+  const perfil = document.getElementById("perfil");
+  document.querySelectorAll("[data-perfil]").forEach((link) => {
+    link.addEventListener("click", () => { perfil.value = link.dataset.perfil; });
+  });
+
+  // Envio do formulário.
+  const form = document.getElementById("form-contato");
+  const status = document.getElementById("form-status");
+  const button = document.getElementById("enviar");
+  const say = (text, kind) => { status.textContent = text; status.className = "status " + kind; };
+
+  form.addEventListener("submit", async (event) => {
+    event.preventDefault();
+    const nome = form.nome.value.trim();
+    const email = form.email.value.trim();
+    if (!nome) { say("Preencha seu nome.", "error"); form.nome.focus(); return; }
+    if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) { say("Confira o e-mail.", "error"); form.email.focus(); return; }
+    if (!form.consentimento.checked) { say("Marque a caixa de consentimento para enviar.", "error"); form.consentimento.focus(); return; }
+    if (!FORM_ENDPOINT) { say("O formulário ainda não está ligado a um endereço de envio. Tente de novo em breve.", "error"); return; }
+
+    button.disabled = true;
+    say("Enviando…", "");
+    try {
+      const response = await fetch(FORM_ENDPOINT, {
+        method: "POST",
+        headers: { "Content-Type": "application/json", "Accept": "application/json" },
+        body: JSON.stringify({ nome, email, perfil: form.perfil.value, consentimento: true }),
+      });
+      if (!response.ok) throw new Error("falha");
+      form.reset();
+      say("Recebemos seu contato. Obrigado!", "ok");
+    } catch (error) {
+      say("Não foi possível enviar agora. Tente de novo em instantes.", "error");
+    } finally {
+      button.disabled = false;
+    }
+  });
+})();
+</script>
+</body>
+</html>
